@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Raj Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Raj Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/worksta.jpeg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Raj Patel</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Raj_Patel_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rajpatelcsulb'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Rajpatel1999'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Raj_B&W.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc- computer Science</p>
+              <p><strong>California State University- Long Beach</strong></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced software engineer based in Los Angeles with over 2+ years of experience and currently 
+              pursuing a Master's degree in computer science. Proficient in designing and optimizing RESTful APIs
+              using Flask and Django, managing AWS deployments, and developing CI/CD pipelines. Experienced in
+              front-end programming using React and TypeScript, resulting in increased user engagement. Expert 
+              in Python, JavaScript, PostgreSQL, and AWS, with a strong background in advanced programming, algorithms,
+              and artificial intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <div class="experience-box-container">
+                <div class="experience-box">
+                  <h3>Gujarat Infotech Limited</h3>
+                  <p>Duration: Sept 2021 - Oct 2022</p>
+                  <p>Job Designation: Software Developer</p>
+                  <ul>
+                    <li>Utilized RESTful APIs with Flask, reducing API response times by 30%.</li>
+                    <li>Developed Django APIs with Redis, achieving 20% faster responses and 30% fewer database queries.</li>
+                    <li>Implemented CI/CD pipelines with Jenkins, reducing error rates by 70% and increasing deployment frequency by 25%.</li>
+                    <li>Deployed web apps to AWS EC2, ensuring 99.9% uptime and optimizing server configurations for a 20% response time reduction.</li>
+                  </ul>
+                </div>
+                <div class="experience-box">
+                  <h3>Gujarat Infotech Limited</h3>
+                  <p>Duration: Jan 2021 - March 2021</p>
+                  <p>Job Designation: Software Developer Intern</p>
+                  <ul>
+                    <li>Transformed user interfaces with React and MobX, increasing user engagement by 24.73%.</li>
+                    <li>Worked on the front-end components with React and JavaScript, reducing package size by 20% and improving loading speed by 40%.</li>
+                    <li>Designed and implemented a real-time notification system with React, TypeScript, Redux, and WebSockets, decreasing latency by 80%.</li>
+                    <li>Collaborated on software testing, validation, and debugging, ensuring product stability and quality.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    <style>
+      .experience-box-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Add gap between the boxes */
+      }
+      .experience-box {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        width: 48%;
+      }
+      .experience-box ul {
+        margin-left: 20px; /* Add left margin to the list items */
+      }
+    </style>
+    
+    
+    
+    
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/morningnews.jpeg"
+                alt="Morning News App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Morning News App</h2>
+            <p class="project-description">
+              Created a Python app with a Tkinter GUI and NewsAPI integration, boosting engagement by 25% with real-time news. Displayed 300+ current articles, showcasing versatility with external APIs.
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Taskmaster.jpeg"
+                alt="Project Two"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TaskMaster Portal</h2>
+            <p class="project-description">
+              Developed a dynamic CRUD app with Django, enhancing task management efficiency for 300+ students. Crafted an engaging login page with HTML, CSS, and JS, increasing user engagement and login success by 12%.
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Chatbridge.jpeg"
+                alt="Project Three"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ChatBridge Network</h2>
+            <p class="project-description">
+              Developed a full-stack responsive chat app using React, Node.js, Express, MongoDB, and Socket.io for real-time communication. Features include group creation, file upload/download, and deployment on Hostinger, utilizing Zustand and other advanced technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <style>
+      .experience-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Gap between project boxes */
+      }
+      .details-container {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        width: 30%; /* Equal width for each project box */
+        box-sizing: border-box;
+        text-align: center; /* Center align text */
+      }
+      .project-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .project-title {
+        margin-top: 10px;
+      }
+      .project-description {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+    
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:rajp76559@gmail.com">rajp76559@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rajpatelcsulb">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
